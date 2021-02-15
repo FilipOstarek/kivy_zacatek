@@ -1,0 +1,39 @@
+<MyLidl>
+
+    name: nameID
+    lastName: lastNameID
+    email: emailID
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        # pos: 100, 100
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name: "
+
+            TextInput:
+                id: nameID
+                multiline: False
+
+            Label:
+                text: "LastName: "
+
+            TextInput:
+                id: lastNameID
+                multiline: False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                id: emailID
+                multiline: False
+
+        Button:
+            text:"Submit"
+            on_press:root.button()
+
