@@ -1,0 +1,19 @@
+<Button>:
+    font_size:40
+    color:0.6,0.3,0.1,1
+    #od 0 do 1
+    size_hint: 0.3, 0.5
+
+<FloatLayout>:
+    Button:
+        #pos_hint: {"x", "y", "top", "bottom", "left", "right"}
+        #od 0 do 1
+        pos_hint: {"x":0.35,"top":1}
+        text: "OwO"
+
+    Button:
+        id: btn
+        pos_hint: {"x":0.35}
+        text: "UwU" if btn.state == "normal" else "OmO"
+        background_color: 0.3, 0.4, 0.5, 1
+
